@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">IslamiApp</string>
+    <string name="logo_quran_content_description">Logo Quran</string>
+    <string name="logo_route_content_description">logo_route</string>
+    <string name="logo_quran_header_content_description">Logo Quran Header</string>
+    <string name="chapter_name">إسم السورة</string>
+    <string name="chapter_number">عدد الآيات</string>
+    <string name="islami_text">إسلامي</string>
 </resources>
