@@ -9,7 +9,7 @@
     tools:context=".HomeActivity">
 
     <TextView
-        android:id="@+id/islamiText"
+        android:id="@+id/id_islamiText"
         style="@style/IslamiText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -23,7 +23,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         app:layout_constraintBottom_toTopOf="@id/id_bottomNavigation"
-        app:layout_constraintTop_toBottomOf="@id/islamiText" />
+        app:layout_constraintTop_toBottomOf="@id/id_islamiText" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/id_bottomNavigation"

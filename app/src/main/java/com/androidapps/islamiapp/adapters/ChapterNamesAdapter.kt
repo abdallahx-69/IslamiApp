@@ -3,10 +3,13 @@ package com.androidapps.islamiapp.adapters
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.androidapps.islamiapp.callbacks.OnChapterClickListener
 import com.androidapps.islamiapp.databinding.ItemShapterBinding
 
 class ChapterNamesAdapter(private val chaptersList: List<Pair<String, Int>>) :
     RecyclerView.Adapter<ChapterNamesAdapter.ChapterNameViewHolder>() {
+
+    var onChapterClickListener: OnChapterClickListener? = null
 
     class ChapterNameViewHolder(val binding: ItemShapterBinding) :
         RecyclerView.ViewHolder(binding.root)
@@ -22,5 +25,9 @@ class ChapterNamesAdapter(private val chaptersList: List<Pair<String, Int>>) :
         val (name, number) = chaptersList[position]
         holder.binding.chapterNameText.text = name
         holder.binding.chapterNumberText.text = number.toString()
+        val item = chaptersList[position]
+        holder.itemView.setOnClickListener {
+            onChapterClickListener?.onChapterClick(item, position)
+        }
     }
 }

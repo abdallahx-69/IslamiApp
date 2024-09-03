@@ -2,6 +2,9 @@ package com.androidapps.islamiapp
 
 class Constants {
     companion object {
+        const val CHAPTER_NAME_EXTRA = "chapterName"
+        const val CHAPTER_NUMBER_EXTRA = "chapterNumber"
+        const val CHAPTER_POSITION_EXTRA = "chapterPosition"
         var chapters = listOf(
             "الفاتحة" to 7,
             "البقرة" to 286,

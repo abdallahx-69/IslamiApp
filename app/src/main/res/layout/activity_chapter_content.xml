@@ -1,9 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/main"
     android:layout_width="match_parent"
+    style="@style/IslamiBackground"
     android:layout_height="match_parent"
     tools:context=".ChapterContentActivity">
 
+    <TextView
+        android:id="@+id/id_islamiText"
+        style="@style/IslamiText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="@string/islami_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        style="@style/IconColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="8dp"
+        android:padding="8dp"
+        android:src="@drawable/icon_back"
+        app:layout_constraintBottom_toBottomOf="@id/id_islamiText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/id_islamiText" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/id_contentRecyclerView"
+        style="@style/ChaptersContentBackground"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.75"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/id_islamiText"
+        app:layout_constraintWidth_percent="0.8"
+        tools:listitem="@layout/item_shapter_content" />
 </androidx.constraintlayout.widget.ConstraintLayout>

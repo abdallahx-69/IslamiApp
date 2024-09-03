@@ -69,4 +69,16 @@
             @color/white
         </item>
     </style>
+
+    <style name="IconColor">
+        <item name="android:tint">
+            @color/white
+        </item>
+    </style>
+
+    <style name="ChaptersContentBackground">
+        <item name="android:background">
+            @drawable/chapters_content_background_on_dark_mode
+        </item>
+    </style>
 </resources>
