@@ -48,7 +48,7 @@
 
     <style name="IslamiText">
         <item name="android:textSize">
-            25sp
+            23sp
         </item>
         <item name="android:textStyle">
             bold
@@ -78,7 +78,7 @@
 
     <style name="ChaptersContentBackground">
         <item name="android:background">
-            @drawable/chapters_content_background_on_dark_mode
+            @drawable/content_background_on_dark_mode
         </item>
     </style>
 </resources>

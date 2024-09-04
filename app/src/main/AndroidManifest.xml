@@ -13,16 +13,19 @@
         android:theme="@style/Theme.IslamiApp"
         tools:targetApi="31">
         <activity
-            android:name=".ChapterContentActivity"
+            android:name=".fragments.ahadeth.AhadethContentActivity"
             android:exported="false" />
         <activity
-            android:name=".ChapterContentActivity"
+            android:name=".fragments.quran.ChapterContentActivity"
             android:exported="false" />
         <activity
-            android:name=".HomeActivity"
+            android:name=".fragments.quran.ChapterContentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".home.HomeActivity"
             android:exported="true" />
         <activity
-            android:name=".SplashActivity"
+            android:name=".home.SplashActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

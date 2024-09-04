@@ -3,8 +3,8 @@ package com.androidapps.islamiapp.adapters
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.androidapps.islamiapp.callbacks.OnChapterClickListener
 import com.androidapps.islamiapp.databinding.ItemShapterBinding
+import com.androidapps.islamiapp.listeners.OnChapterClickListener
 
 class ChapterNamesAdapter(private val chaptersList: List<Pair<String, Int>>) :
     RecyclerView.Adapter<ChapterNamesAdapter.ChapterNameViewHolder>() {

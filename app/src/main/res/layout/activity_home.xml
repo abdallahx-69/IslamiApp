@@ -6,7 +6,7 @@
     style="@style/IslamiBackground"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HomeActivity">
+    tools:context=".home.HomeActivity">
 
     <TextView
         android:id="@+id/id_islamiText"
