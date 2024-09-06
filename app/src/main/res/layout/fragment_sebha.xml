@@ -1,13 +1,84 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragments.quran.QuranFragment">
+    tools:context=".fragments.sebha.SebhaFragment">
 
-    <!-- TODO: Update blank fragment layout -->
+    <ImageView
+        android:id="@+id/id_headOfSebhaImage"
+        style="@style/LogoHeadOfSebha"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/head_of_sebha_content_description"
+        app:layout_constraintHeight_percent="0.15"
+        app:layout_constraintStart_toStartOf="@id/guideline2"
+        app:layout_constraintTop_toTopOf="@id/guideline" />
+
+    <ImageView
+        android:id="@+id/id_bodyOfSebhaImage"
+        style="@style/LogoBodyOfSebha"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-65dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/body_of_sebha_content_description"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/id_headOfSebhaImage"
+        app:layout_constraintWidth_percent=".7" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.10" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.47" />
+
     <TextView
+        android:id="@+id/id_numberOfTsabehatText"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        style="@style/IslamiText"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="@string/number_of_tasbehat_text"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@id/id_bodyOfSebhaImage" />
 
-</FrameLayout>
+    <TextView
+        android:id="@+id/id_numberOfTsabehatNumber"
+        style="@style/NumberOfTasbehBackgroundAndColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:text="@string/number_of_tasbehat_number"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_numberOfTsabehatText" />
+
+
+    <TextView
+        android:id="@+id/id_tsabehatText"
+        style="@style/NumberOfTasbehBackgroundAndColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:padding="20dp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_numberOfTsabehatNumber"
+        tools:text="سبحان الله" />
+</androidx.constraintlayout.widget.ConstraintLayout>

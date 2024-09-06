@@ -8,4 +8,18 @@
     <string name="ahadeth_title">الأحاديث</string>
     <string name="islami_text">إسلامي</string>
     <string name="icon_back_content_description">Icon Back</string>
+    <string name="head_of_sebha_content_description">Head Of Sebha Content Description</string>
+    <string name="body_of_sebha_content_description">Body Of Sebha Content Description</string>
+    <string name="number_of_tasbehat_text">عدد التسبيحات</string>
+    <string name="number_of_tasbehat_number">0</string>
+    <array name="azkarList">
+        <item>سبحان الله</item>
+        <item>الحمد لله</item>
+        <item>لا اله الا الله</item>
+        <item>الله اكبر</item>
+        <item>استغفر الله</item>
+        <item>لا حول ولا قوة الا بالله</item>
+        <item>سبحان الله وبحمده</item>
+        <item>سبحان الله العظيم</item>
+    </array>
 </resources>

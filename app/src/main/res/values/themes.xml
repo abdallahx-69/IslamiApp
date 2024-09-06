@@ -24,7 +24,7 @@
 
     <style name="IslamiBackground">
         <item name="android:background">
-            @drawable/light_background
+            @drawable/background_light
         </item>
     </style>
 
@@ -79,6 +79,34 @@
     <style name="ChaptersContentBackground">
         <item name="android:background">
             @drawable/content_background_on_light_mode
+        </item>
+    </style>
+
+    <style name="LogoHeadOfSebha">
+        <item name="android:src">
+            @drawable/logo_head_of_sebha_light
+        </item>
+    </style>
+
+    <style name="LogoBodyOfSebha">
+        <item name="android:src">
+            @drawable/logo_body_of_sebha_light
+        </item>
+
+    </style>
+
+    <style name="NumberOfTasbehBackgroundAndColor">
+        <item name="android:background">
+            @drawable/number_of_tasbeh_background_light_mode
+        </item>
+        <item name="android:textSize">
+            23sp
+        </item>
+        <item name="android:textStyle">
+            bold
+        </item>
+        <item name="android:textColor">
+            @color/white
         </item>
     </style>
 </resources>
