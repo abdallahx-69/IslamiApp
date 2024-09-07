@@ -108,4 +108,22 @@
             @color/white
         </item>
     </style>
+
+    <style name="IconPlay">
+        <item name="android:src">
+            @drawable/icon_radio_play_dark
+        </item>
+    </style>
+
+    <style name="IconNext">
+        <item name="android:src">
+            @drawable/icon_radio_next_dark
+        </item>
+    </style>
+
+    <style name="IconPrevious">
+        <item name="android:src">
+            @drawable/icon_radio_previous_dark
+        </item>
+    </style>
 </resources>
